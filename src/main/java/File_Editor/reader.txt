@@ -1,0 +1,66 @@
+OverviewPackageClassUseTreeDeprecatedIndexHelpJava™ Platform
+Standard Ed. 7Prev ClassNext ClassFramesNo FramesAll ClassesSummary: Nested | Field | Constr | MethodDetail: Field | Constr | Method
+java.io
+Class FileReader
+java.lang.Object
+java.io.Reader
+java.io.InputStreamReader
+java.io.FileReader
+All Implemented Interfaces:
+Closeable, AutoCloseable, Readable
+
+public class FileReader
+extends InputStreamReader
+Convenience class for reading character files. The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate. To specify these values yourself, construct an InputStreamReader on a FileInputStream.
+FileReader is meant for reading streams of characters. For reading streams of raw bytes, consider using a FileInputStream.
+
+Since:
+JDK1.1
+See Also:
+InputStreamReader, FileInputStream
+Field Summary
+Fields inherited from class java.io.Reader
+lock
+Constructor Summary
+Constructors
+Constructor and Description
+FileReader(File file)
+Creates a new FileReader, given the File to read from.
+FileReader(FileDescriptor fd)
+Creates a new FileReader, given the FileDescriptor to read from.
+FileReader(String fileName)
+Creates a new FileReader, given the name of the file to read from.
+Method Summary
+Methods inherited from class java.io.InputStreamReader
+close, getEncoding, read, read, ready
+Methods inherited from class java.io.Reader
+mark, markSupported, read, read, reset, skip
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+FileReader
+public FileReader(String fileName)
+           throws FileNotFoundException
+Creates a new FileReader, given the name of the file to read from.
+Parameters:
+fileName - the name of the file to read from
+Throws:
+FileNotFoundException - if the named file does not exist, is a directory rather than a regular file, or for some other reason cannot be opened for reading.
+FileReader
+public FileReader(File file)
+           throws FileNotFoundException
+Creates a new FileReader, given the File to read from.
+Parameters:
+file - the File to read from
+Throws:
+FileNotFoundException - if the file does not exist, is a directory rather than a regular file, or for some other reason cannot be opened for reading.
+FileReader
+public FileReader(FileDescriptor fd)
+Creates a new FileReader, given the FileDescriptor to read from.
+Parameters:
+fd - the FileDescriptor to read from
+OverviewPackageClassUseTreeDeprecatedIndexHelpJava™ Platform
+Standard Ed. 7Prev ClassNext ClassFramesNo FramesAll ClassesSummary: Nested | Field | Constr | MethodDetail: Field | Constr | Method
+Submit a bug or feature
+For further API reference and developer documentation, see Java SE Documentation. That documentation contains more detailed, developer-targeted descriptions, with conceptual overviews, definitions of terms, workarounds, and working code examples.
+Copyright © 1993, 2020, Oracle and/or its affiliates. All rights reserved. Use is subject to license terms. Also see the documentation redistribution policy. Modify Cookie Preferences. Modify Ad Choices.

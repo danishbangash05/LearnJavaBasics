@@ -45,15 +45,21 @@ public class StudentsCollection {
 //        }
         for (int i = 0; i < studentList.size(); i++) {
             int len = studentList.get(i).length();
+            System.out.println(studentList.get(i));
             if (len != 5) {
-                studentList.remove(studentList);
+                studentList.remove(studentList.get(i));
 
 //                System.out.println(nameWith6Characters);
             }
-            else {
-                System.out.println(studentList.get(i));
-            }
+//            else {
+//                System.out.println(studentList.get(i));
+//            }
         }
+        System.out.println(studentList.size());
+        for (String n: studentList) {
+//            System.out.println(studentList);
+        }
+        System.out.println(studentList);
 //        Iterator<String> itr = new studentList.iterator();
 //        int len = studentList.get(itr).length();
 //        while (itr.hasNext()){

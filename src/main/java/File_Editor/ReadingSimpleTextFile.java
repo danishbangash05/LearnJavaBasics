@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Reading_file {
+public class ReadingSimpleTextFile {
     public static void main(String[] args) {
         // File readfile = new File("Danish.txt");
         //        try {

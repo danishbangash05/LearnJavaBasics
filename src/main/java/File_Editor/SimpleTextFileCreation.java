@@ -3,7 +3,7 @@ package File_Editor;
 import java.io.File;
 import java.io.IOException;
 
-public class Creating_txtfile_Java {
+public class SimpleTextFileCreation {
     public static void main(String[] args) {
         File myFile = new File("Danish.txt");
         try {

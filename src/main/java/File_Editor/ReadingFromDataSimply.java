@@ -4,18 +4,19 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class jsonReader {
+public class ReadingFromDataSimply {
     public static void main(String[] args) {
-        File readfile = new File("sample.json");
+        File data = new File("danish.json");
         try {
-            Scanner sc = new Scanner(readfile);
+            Scanner sc = new Scanner(data);
             while (sc.hasNextLine()){
-                String line = sc.nextLine();
-                System.out.println(line);
+                String dan = sc.nextLine();
+                System.out.println(dan);
             }
             sc.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
     }
 }

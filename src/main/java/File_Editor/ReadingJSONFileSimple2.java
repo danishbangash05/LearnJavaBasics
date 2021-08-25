@@ -2,18 +2,17 @@ package File_Editor;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.util.Scanner;
 
-public class ReadFile {
+public class ReadingJSONFileSimple2 {
     public static void main(String[] args) {
-        File read = new File("Demo.json");
+        File readfile = new File("sample.json");
         try {
-            Scanner sc = new Scanner(read);
+            Scanner sc = new Scanner(readfile);
             while (sc.hasNextLine()){
-                String reading = sc.nextLine();
-                System.out.println(reading);
+                String line = sc.nextLine();
             }
+            sc.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

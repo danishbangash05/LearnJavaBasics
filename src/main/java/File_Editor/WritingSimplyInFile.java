@@ -3,7 +3,7 @@ package File_Editor;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Write_In_File {
+public class WritingSimplyInFile {
     public static void main(String[] args) {
         try {
             FileWriter fileWriter = new FileWriter("Danish.txt");

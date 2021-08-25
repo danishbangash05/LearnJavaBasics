@@ -1,0 +1,20 @@
+[
+  {
+    "Employee":
+    {
+      "Email":"danish@gmail.com"
+    },"Address":"House no, xyx, Town State Zipcode Country",
+    "FirstName":"Danish","MobileNo#":1234567890,
+    "LastName":"Bangash"
+  },
+  {
+    "Employee":
+{
+  "Email":"hamza@gmail.com",
+  "Address":"House no, abc, Town State Zipcode Country",
+  "FirstName":"Hamza",
+  "MobileNo#":987654321,
+  "LastName":"Sohrab"
+}
+  }
+]

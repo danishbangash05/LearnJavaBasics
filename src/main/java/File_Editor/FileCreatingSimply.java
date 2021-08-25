@@ -3,7 +3,7 @@ package File_Editor;
 import java.io.File;
 import java.io.IOException;
 
-public class FileCreater {
+public class FileCreatingSimply {
     public static void main(String[] args) {
         File creatingNewJavaFile = new File("Demo.txt");
         try {

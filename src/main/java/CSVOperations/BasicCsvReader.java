@@ -1,10 +1,9 @@
-package csvoperations;
+package CSVOperations;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
-import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,6 +15,7 @@ public class BasicCsvReader {
         try(Reader reader = Files.newBufferedReader(Paths.get(csvSample));
         CSVParser csvParser = new CSVParser(reader,CSVFormat.DEFAULT.withFirstRecordAsHeader())){
             for (CSVRecord csvRecord: csvParser) {
+                // Accessing values by column index
                 String id = csvRecord.get(0);
                 String firstName = csvRecord.get(1);
                 String lastName = csvRecord.get(2);

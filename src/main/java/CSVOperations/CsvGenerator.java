@@ -1,4 +1,4 @@
-package csvoperations;
+package CSVOperations;
 
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
@@ -9,7 +9,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
 
 public class CsvGenerator {
     public static String csvSample = "src/main/java/csvoperations/sample2.csv";

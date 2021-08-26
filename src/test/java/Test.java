@@ -1,9 +1,10 @@
+import SanaClasses.Calculator;
 import org.testng.Assert;
 
 public class Test {
     @org.testng.annotations.Test
     public void add(){
-        Calculator  cal = new Calculator();
+        Calculator cal = new Calculator();
         int a = 4;
         int b = 4;
         int sum = a + b;

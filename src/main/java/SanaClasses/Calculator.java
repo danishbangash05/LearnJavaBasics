@@ -1,5 +1,4 @@
-import java.util.Calendar;
-import java.util.Scanner;
+package SanaClasses;
 
 public class Calculator {
     public static void main(String[] args) {

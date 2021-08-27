@@ -5,10 +5,18 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class XLSXGenerator {
+    public static String xlsxSample = "src/main/java/XLSXOperations/sample.xlsx";
+
+    public XLSXGenerator() throws IOException {
+    }
+
     public static void main(String[] args) throws Exception {
-        FileInputStream input = new FileInputStream(new File("src/main/java/XLSXOperations/sample.xlsx"));
+
+        FileInputStream input = new FileInputStream(new File(xlsxSample));
         XSSFWorkbook workbook = new XSSFWorkbook(input);
         XSSFSheet sheet = workbook.getSheetAt(0);
         //Creating Our first Row Here
@@ -18,7 +26,6 @@ public class XLSXGenerator {
 
         XSSFCell row1Cell2 = row1.createCell(1);
         row1Cell2.setCellValue("FirstName - ");
-
         XSSFCell row1Cell3 = row1.createCell(2);
         row1Cell3.setCellValue("LastName - ");
 
@@ -68,7 +75,7 @@ public class XLSXGenerator {
         row4Cell4.setCellValue("23456");
 
         input.close();
-        FileOutputStream output = new FileOutputStream(new File("src/main/java/XLSXOperations/sample.xlsx"));
+        FileOutputStream output = new FileOutputStream(new File(xlsxSample));
         workbook.write(output);
         output.close();
         System.out.println("Your File is Successfully Generated");

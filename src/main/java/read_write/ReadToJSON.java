@@ -19,7 +19,6 @@ public class ReadToJSON {
             Set<Object> keySet = ak.keySet();
             for (Object ks : keySet) {
                 System.out.println(ks);
-
             }
             ak.keySet();
 

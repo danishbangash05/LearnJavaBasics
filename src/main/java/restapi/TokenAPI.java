@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.given;
 
 public class TokenAPI {
     public static void main(String[] args) throws IOException {
-            //getToken();
+            getToken();
             submitToken();
     }
     public static String getToken() throws IOException {
@@ -56,14 +56,14 @@ public class TokenAPI {
         //  Converting String JSONbody to JSONpath object
         JsonPath jp = new JsonPath(responseBody);
         token = jp.get("access_token");
-        //System.out.println("Access_Token: " + "    " + token);
+        System.out.println("Access_Token: " + "    " + token);
         client.connectionPool().evictAll();
 
         return token;
     }
     public static void submitToken() throws IOException {
         String url = "https://5x9m5ed0tj.execute-api.us-east-1.amazonaws.com/test/submit";
-        String path = new String(Files.readAllBytes(Paths.get("C:\\Users\\Farhan\\Desktop\\Danish\\LearnJavaBasics\\src\\main\\java\\payloads\\submit.json")));
+        String path = new String(Files.readAllBytes(Paths.get("src/main/java/payloads/submit.json")));
 
         RequestSpecification rs = given().body(path);
         rs.contentType(ContentType.JSON);

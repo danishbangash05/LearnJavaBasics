@@ -30,8 +30,8 @@ public class BasicCsvReader {
                 System.out.println("-------------------\n");
             }
     }
-         catch (Exception e) {
-             System.out.println(e);;
+         catch (Exception error) {
+             System.out.println(error);
         }
     }
 }

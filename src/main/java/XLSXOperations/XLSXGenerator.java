@@ -16,10 +16,9 @@ public class XLSXGenerator {
 
     public static void main(String[] args) throws Exception {
 
-        FileInputStream input = new FileInputStream(new File(xlsxSample));
-        XSSFWorkbook workbook = new XSSFWorkbook(input);
-        XSSFSheet sheet = workbook.getSheetAt(0);
-        //Creating Our first Row Here
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet = workbook.createSheet();
+        //Creating Our first Row Here which is at index 0
         XSSFRow row1 = sheet.createRow(0);  /// This is our first row
         XSSFCell row1Cell1 = row1.createCell(0); // this is our first cell in row 1
         row1Cell1.setCellValue("Employee ID - ");
@@ -32,7 +31,7 @@ public class XLSXGenerator {
         XSSFCell row1Cell4 = row1.createCell(3);
         row1Cell4.setCellValue("ZipCode - ");
 
-        //Creating our second Row here now
+        //Creating our second Row here now at index 1
         XSSFRow row2 = sheet.createRow(1);
         XSSFCell row2Cell1 = row2.createCell(0);
         row2Cell1.setCellValue("1");
@@ -46,7 +45,7 @@ public class XLSXGenerator {
         XSSFCell row2Cell4 = row2.createCell(3);
         row2Cell4.setCellValue("12345");
 
-        //Creating our Third Row here now
+        //Creating our Third Row here now at index 2
         XSSFRow row3 = sheet.createRow(2);
         XSSFCell row3Cell1 = row3.createCell(0);
         row3Cell1.setCellValue("2");
@@ -60,21 +59,20 @@ public class XLSXGenerator {
         XSSFCell row3Cell4 = row3.createCell(3);
         row3Cell4.setCellValue("23456");
 
-        //Creating our Fourth Row here now
+        //Creating our Fourth Row here now at index 3
         XSSFRow row4 = sheet.createRow(3);
         XSSFCell row4Cell1 = row4.createCell(0);
-        row4Cell1.setCellValue("2");
+        row4Cell1.setCellValue("3");
 
         XSSFCell row4Cell2 = row4.createCell(1);
-        row4Cell2.setCellValue("Hamza");
+        row4Cell2.setCellValue("Khairul");
 
         XSSFCell row4Cell3 = row4.createCell(2);
-        row4Cell3.setCellValue("Sohrab");
+        row4Cell3.setCellValue("Choudhry");
 
         XSSFCell row4Cell4 = row4.createCell(3);
-        row4Cell4.setCellValue("23456");
+        row4Cell4.setCellValue("34567");
 
-        input.close();
         FileOutputStream output = new FileOutputStream(new File(xlsxSample));
         workbook.write(output);
         output.close();

@@ -6,7 +6,7 @@
 //public class CsvUtilities {
 //    /**
 //     * public static void main(String[] args) throws Exception {
-//     * Scanner sc = new Scanner(new File("C:\\Users\\Dell\\Desktop\\data.csv"));
+//     * Scanner sc = new Scanner(new File("C:\\Users\\Dell\\Desktop\\datadanish.csv"));
 //     * //parsing a CSV file into the constructor of Scanner class
 //     * sc.useDelimiter(",");
 //     * //setting comma as delimiter pattern
@@ -21,7 +21,7 @@
 //        readSta
 //        {
 //            public static void readStandardCSVFile () {
-//            String fileName = "src/main/java/csvoperations/data.csv";
+//            String fileName = "src/main/java/csvoperations/datadanish.csv";
 //            try {
 //                CSVReader csvReader = new CSVReader(new FileReader(fileName));
 //                List<String[]> reader = csvReader.readAll();

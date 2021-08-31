@@ -1,5 +1,4 @@
-FirstName, LastName, PhoneNumber
-Danish	, Bangash,  1234567890
-Hamza	, Sohrab,   2345679567
-
-// Comma Separated Values (CSV)
+FirstName,LastName,ZipCode
+Jack, Mack, 3546
+John, Henry, 2341
+Mon, Henry, 2341

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class IzaanITAutomation {
     public static void main(String[] args) throws InterruptedException {
         // setting a pathway for the chrome driver that we have used
-        System.setProperty("webdriver.chrome.driver", "src/main/java/WebBrowserByJahidulSir/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/java/WebBrowser/chromedriver");
 
         // Creating an object for maximizing the screen
         ChromeOptions options = new ChromeOptions();

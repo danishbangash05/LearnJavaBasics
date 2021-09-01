@@ -44,7 +44,6 @@ public class SendText_EmailFromVAT {
  *
  * This is not done yet
  *
- *
  */
 //        Thread.sleep(2000);
 //        driver.close();

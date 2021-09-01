@@ -192,28 +192,26 @@
             <artifactId>dom4j</artifactId>
             <version>1.6.1</version>
         </dependency>
-<<<<<<< HEAD
+
         <!-- YAML Dependencies -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>2.12.5</version>
-=======
+        </dependency>
 
         <!--   YAML Dependencies    -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>2.9.8</version>
->>>>>>> abf9d90ca371fb245ff06e6bc217c1b618acb286
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.2.3</version>
         </dependency>
-<<<<<<< HEAD
-=======
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -237,7 +235,6 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.6</version>
         </dependency>
->>>>>>> abf9d90ca371fb245ff06e6bc217c1b618acb286
     </dependencies>
 
     <properties>
